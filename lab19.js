@@ -1,9 +1,12 @@
-var price = ["0.50", "1.99", "3.99", "1.00"]
+var cart = new Array();
 
-function getItems(){
-        document.getElementById("total").innerHTML ="price[i]";
+
+function addtocart(name, price){
+    cart.push(price);
+    updateCart();
 }
 
-function getPrice() {
-
+function updateCart(){
+    document.getElementById("cart").innerHTML = cart.pop();
 }
+
