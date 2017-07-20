@@ -21,14 +21,32 @@
     <script src="lab19.js"></script>
 </head>
 <body>
-<h1>Shopping Cart</h1>
-<div class="btn-group">
-    <button type="button" class="btn btn-default" onclick="addtocart('egg', '.5')">Egg</button>
-    <button type="button" class="btn btn-default"  onclick="addtocart('milk', '3')">Milk</button>
-    <button type="button" class="btn btn-default"  onclick="addtocart('cheese', '2')">Cheese</button>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <a class="navbar-brand" href="#">Itemized Shopping List</a>
+    <ul class="nav navbar-nav">
+        <li class="active">
+            <a href="http://www.grandcircus.co">Grand Circus</a>
+        </li>
+        <li>
+            <a href="http://www.github.com">Github</a>
+        </li>
+    </ul>
+</nav>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+    </div>
+    <div class="panel-body">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" onclick="addtocart('egg', '0.50')">Egg</button>
+            <button type="button" class="btn btn-default"  onclick="addtocart('milk', '2.99')">Milk</button>
+            <button type="button" class="btn btn-default"  onclick="addtocart('cheese', '3.99')">Cheese</button>
+        </div>
+    </div>
+    <p id="cart"></p>
 </div>
 
-<p id="cart"></p>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
