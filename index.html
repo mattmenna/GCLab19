@@ -31,19 +31,31 @@
             <a href="http://www.github.com">Github</a>
         </li>
     </ul>
-</nav>
+</nav><br><br><br>
+
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title">Panel title</h3>
+        <h3 class="panel-title">Shopping List</h3>
     </div>
     <div class="panel-body">
         <div class="btn-group">
-            <button type="button" class="btn btn-default" onclick="addtocart('egg', '0.50')">Egg</button>
-            <button type="button" class="btn btn-default"  onclick="addtocart('milk', '2.99')">Milk</button>
-            <button type="button" class="btn btn-default"  onclick="addtocart('cheese', '3.99')">Cheese</button>
+            <button type="button" class="btn btn-default" onclick="addtocart('Egg', .50)">Egg</button><br>
+            <button type="button" class="btn btn-default"  onclick="addtocart('Milk', 2.99)">Milk</button><br>
+            <button type="button" class="btn btn-default"  onclick="addtocart('Cheese', 3.99)">Cheese</button><br>
         </div>
     </div>
+    <div class="panel-body">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" onclick="checkOut()">Checkout</button><br>
+            <button type="button" class="btn btn-default"  onclick="resetCart()">Reset</button><br>
+
+        </div>
+    </div>
+
+    <h3>Cart:</h3>
     <p id="cart"></p>
+    <h3>Grand Total</h3>
+    <p id="grandTotal"></p>
 </div>
 
 
